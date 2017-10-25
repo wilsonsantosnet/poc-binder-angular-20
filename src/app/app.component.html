@@ -1,0 +1,18 @@
+
+<h2  (caller)="teste('green')" [style.background-color]="color">Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" href="https://angular.io/tutorial" (click)="teste2($event)">Tour of Heroes</a></h2>
+  </li>
+</ul>
+
+<table>
+  <tr *ngFor="let item of itens; index as i">
+    <!--<td style.background-color='{{ pintarLinha2(item) }}'>{{item}}</td>-->
+    <td (caller)="pintarLinha(item)" [style.background-color]="colorLine[i]">{{pintarLinha2(item)}}</td>
+    
+  </tr>
+</table>
+
+{{colorLine}}
+
